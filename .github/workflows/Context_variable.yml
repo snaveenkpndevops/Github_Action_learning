@@ -1,17 +1,7 @@
 name: Context_variable
 
 on:
-  workflow_dispatch:
-    
-    inputs:  # Define inputs under the workflow_dispatch event
-      name:
-        description: "The name of the user"
-        default: "John Doe"
-        required: true
-      location:
-        description: "The location of the user"
-        default: "America"
-        required: true
+  workflow_dispatch:  # This line makes the workflow run only when triggered manually
 
 jobs:
   build:
@@ -19,4 +9,5 @@ jobs:
 
     steps:
       - name: Hello World
-        run: echo "The name is ${{ github.event.inputs.name }} and the location is ${{ github.event.inputs.location }}"
+        run: echo "This workflow is in the ${{ github.ref_name }} branch of the ${{ github.repository }} repository"
+
