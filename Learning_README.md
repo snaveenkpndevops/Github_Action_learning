@@ -56,3 +56,84 @@ link:  https://www.youtube.com/watch?v=zH8hz_21x_0&list=PLLrA_pU9-Gz2GnvKN0kzVfI
 
 
 ![Github Action Workflow yml Syntax Explanation](./images/Workflow%20Syntax%20Explanation2.png)
+
+
+### Simple Workflow Handson:
+
+1. Create a new repository (private repository).
+
+2. Inside this repository  →  create `.github/workflows`  folder  
+
+3. Inside this  `.github/workflows` folder create yml file (that is our workflow (pipeline))
+
+[or]
+
+Inside the repository → Click Actions [ Top Navigation ]  →  Click Create Simple Workflow 
+
+ It will create a simple workflow with pre-build steps 
+
+This will automatically create `.github/workflows/demo.yml` file.
+
+Troubleshooting:
+
+I created workflows yml in my local machine → while push my changes to github repository, I am facing the below issue.
+
+
+![my handson Workflow](./images/Troubleshooting1.png)
+
+
+To resolve this issue, create a new personal access token in Github with workflow read and create permission and update your local machine git credentials.
+
+
+![my handson Workflow](./images/Troubleshooting2.png)
+
+
+
+```
+// simple.yml
+
+name: simple-workflow
+
+on:
+  # push:
+  #   branches:
+  #     - main
+
+  workflow_dispatch:    # This line makes the workflow run only when user's manual trigger (eliminates automatic trigger on push)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: helloworld
+        run: echo 'Hello my name is naveen'
+
+
+```
+
+This above workflow run only when we trigger it manually.
+
+
+```
+// auto_trigger.yml
+
+name: my-autotrigger-workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: helloworld
+        run: echo 'Hello my name is naveen'
+
+
+```
+
+This above workflow run automatically when there is new commit (push commit) in the main branch.
