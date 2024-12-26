@@ -9,7 +9,6 @@ link:  https://www.youtube.com/watch?v=zH8hz_21x_0&list=PLLrA_pU9-Gz2GnvKN0kzVfI
 ```
 
 
-Order of README.md:
+### For Learning the Github Action, Please refer the `Learning_README.md` to check the order of Readme files.
 
-1. Simple_Workflow_README.md
-2. Variables_Secrets_Workflow_README.md
+
