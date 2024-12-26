@@ -1,0 +1,22 @@
+name: Input_variable
+
+on:
+  workflow_dispatch:
+   
+    inputs:  # Define inputs under the workflow_dispatch event
+      name:
+        description: "The name of the user"
+        default: "John Doe"
+        required: true
+      location:
+        description: "The location of the user"
+        default: "Unknown"
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World
+        run: echo "The name is ${{ github.event.inputs.name }} and the location is ${{ github.event.inputs.location }}"
