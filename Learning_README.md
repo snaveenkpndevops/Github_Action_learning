@@ -90,7 +90,7 @@ To resolve this issue, create a new personal access token in Github with workflo
 
 
 ```
-// simple.yml
+// .github/workflows/simple.yml
 
 name: simple-workflow
 
@@ -128,7 +128,7 @@ This above workflow run only when we trigger it manually.
 
 
 ```
-// auto_trigger.yml
+// .github/workflows/auto_trigger.yml
 
 name: my-autotrigger-workflow
 
