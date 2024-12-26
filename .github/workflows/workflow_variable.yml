@@ -1,4 +1,4 @@
-name: simple-workflow
+name: workflow-variable
 
 on:
   workflow_dispatch:    # This line makes the workflow run only when user's manual trigger (eliminates automatic trigger on push)
