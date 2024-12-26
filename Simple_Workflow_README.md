@@ -9,7 +9,9 @@ link:  https://www.youtube.com/watch?v=zH8hz_21x_0&list=PLLrA_pU9-Gz2GnvKN0kzVfI
 ```
 
 
-### For Learning the Github Action, Please refer the `Learning_README.md` to check the order of Readme files.
+## Note:
+
+For Learning the Github Action, Please refer the `Learning_README.md` to check the order of Readme files.
 
 
 ### Github Action Components:
