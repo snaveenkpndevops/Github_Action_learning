@@ -1,0 +1,17 @@
+name: simple-workflow
+
+on:
+  workflow_dispatch:    # This line makes the workflow run only when user's manual trigger (eliminates automatic trigger on push)
+
+env:
+  name: naveen
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      country: india
+
+    steps:
+      - name: helloworld
+        run: echo 'Hello my name is $name, i'm from $country'
