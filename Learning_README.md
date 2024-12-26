@@ -8,6 +8,7 @@ Youtube: TechTrapture
 link:  https://www.youtube.com/watch?v=zH8hz_21x_0&list=PLLrA_pU9-Gz2GnvKN0kzVfIZVEUApgjTN
 ```
 
+
 ### Github Action Components:
 
 ![Github Action Components](./images/github_action_components.png)
@@ -39,11 +40,19 @@ link:  https://www.youtube.com/watch?v=zH8hz_21x_0&list=PLLrA_pU9-Gz2GnvKN0kzVfI
                    Ex: Checkout code, build docker application.
 
 
+
 ### Simple Workflow:
 
 ![Simple Workflow](./images/Simple%20Workflow.png)
 
 
+
 ### Github Action Workflow yml Syntax Explanation:
 
 ![Github Action Workflow yml Syntax Explanation](./images/Workflow%20Syntax%20Explanation.png)
+
+
+![Github Action Workflow yml Syntax Explanation](./images/Workflow%20Syntax%20Explanation1.png)
+
+
+![Github Action Workflow yml Syntax Explanation](./images/Workflow%20Syntax%20Explanation2.png)
