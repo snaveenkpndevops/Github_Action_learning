@@ -1,0 +1,14 @@
+name: simple-workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: helloworld
+        run: echo 'Hello my name is naveen'
