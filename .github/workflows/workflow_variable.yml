@@ -1,7 +1,7 @@
 name: workflow-variable
 
 on:
-  workflow_dispatch:    # This line makes the workflow run only when user's manual trigger (eliminates automatic trigger on push)
+  workflow_dispatch:  # This line makes the workflow run only when triggered manually
 
 env:
   name: naveen
@@ -13,5 +13,5 @@ jobs:
       country: india
 
     steps:
-      - name: helloworld
-        run: echo 'Hello my name is $name, i'm from $country'
+      - name: Hello World
+        run: echo "Hello, my name is ${{ env.name }}, I'm from ${{ env.country }}"
