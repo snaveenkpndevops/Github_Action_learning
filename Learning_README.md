@@ -155,3 +155,14 @@ This above workflow run automatically when there is new commit (push commit) in 
 
 
 ![my handson Workflow](./images/autotrigger2.png)
+
+
+### Note:
+
+You can disable the unwanted workflow in github action.
+
+
+![Disable unwanted Workflow](./images/disable_unwanted_workflow.png)
+
+
+Now this workflow will be disable mode. This workflow will not trigger, if there is any new commit in main branch.
