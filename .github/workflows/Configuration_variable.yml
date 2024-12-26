@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: Hello World
-        run: echo "${{ env.name }} from ${{ vars.department }} department"
+        run: echo "${{ env.name }} from ${{ vars.DEPARTMENT }} department"
