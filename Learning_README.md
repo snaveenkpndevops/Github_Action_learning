@@ -115,6 +115,18 @@ jobs:
 This above workflow run only when we trigger it manually.
 
 
+![my handson Workflow](./images/simple1.png)
+
+
+![my handson Workflow](./images/simple2.png)
+
+
+![my handson Workflow](./images/simple3.png)
+
+
+![my handson Workflow](./images/simple4.png)
+
+
 ```
 // auto_trigger.yml
 
@@ -137,3 +149,9 @@ jobs:
 ```
 
 This above workflow run automatically when there is new commit (push commit) in the main branch.
+
+
+![my handson Workflow](./images/autotrigger1.png)
+
+
+![my handson Workflow](./images/autotrigger2.png)
