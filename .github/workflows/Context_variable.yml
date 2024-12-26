@@ -1,0 +1,12 @@
+name: Context_variable
+
+on:
+  workflow_dispatch:  # This line makes the workflow run only when triggered manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World
+        run: echo "This workflow is in  ${{ github.branch }} branch of ${{ github.repository }} repository"
