@@ -60,4 +60,7 @@ jobs:
 ### 2. Self-hosted Runner:
 
 
+For Self-hosted runner, we are going to set up this runner in our local machine. We can also use Remote Server like (Ec2, Azure VM, Google Cloud VM) for hosting the runner.
+
+
 
