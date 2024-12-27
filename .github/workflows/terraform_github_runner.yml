@@ -3,6 +3,12 @@ name: Terraform GitHub Runner Workflow
 on:
   workflow_dispatch:  # Trigger workflow only on manual dispatch
 
+    inputs:  # Define inputs under the workflow_dispatch event
+      apply:
+        description: "Terraform apply Option"
+        default: "No"
+        required: true
+
 jobs:
   terraform:
     name: Terraform Execution
@@ -44,6 +50,6 @@ jobs:
 
       # Step 7: Terraform Apply (manual trigger only)
       - name: Terraform Apply
-        if: github.event.inputs.apply == 'true'  # Adds a conditional manual apply option
+        if: github.event.inputs.apply == 'Yes'  # Adds a conditional manual apply option
         working-directory: ./terraform
         run: terraform apply -auto-approve tfplan
