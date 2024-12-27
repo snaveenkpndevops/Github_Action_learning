@@ -20,8 +20,6 @@ In this, we will be running our terraform workflow in Github-hosted Runner first
 
 
 
-![Runners](./images/Runners.png)
-
 
 
 ### 1. Terraform Workflow in Github-hosted Runner:
