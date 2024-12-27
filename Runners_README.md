@@ -57,6 +57,8 @@ jobs:
 
 
 
+
+
 ### 2. Self-hosted Runner:
 
 
@@ -69,7 +71,8 @@ There are 2 types of self-hosted runner:
 2. Repository Runner: If the runner is configured only for a specific repository, it cannot work with other repositories or organizations.
 
 
-### 1. Organization Runner:
+
+### 2.1 Organization Runner:
 
 If you configure the runner at the organization level, it will be available to all repositories within the organization. 
 
@@ -98,7 +101,7 @@ If you configure the runner at the organization level, it will be available to a
 
 
 
-### 2. Repository Runner:
+### 2.2 Repository Runner:
 
 If the runner is configured only for a specific repository, it cannot work with other repositories or organizations.
 
