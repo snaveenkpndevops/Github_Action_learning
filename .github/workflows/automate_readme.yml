@@ -4,7 +4,8 @@ name: Automate Terraform Readme Docs
 #    branches: [ "master" ]
 
 on:
-  workflow_call:  # This event enables this workflow to be called from another workflow, making it reusable.
+  # workflow_call:  # This event enables this workflow to be called from another workflow, making it reusable.
+  workflow_dispatch: 
 
 permissions:      # These permissions define what the workflow can access and modify in the repository:
   repository-projects: write   # Allows creating and modifying project boards.
