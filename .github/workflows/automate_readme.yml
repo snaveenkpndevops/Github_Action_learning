@@ -1,12 +1,12 @@
 name: Automate Terraform Readme Docs
 
-on:
- push:
-   branches: 
-      - main   # This workflow will automatically generate readme file when there is any push.
-
 # on:
-#   # workflow_call:  # This event enables this workflow to be called from another workflow, making it reusable.
+#  push:
+#    branches: 
+#       - main   # This workflow will automatically generate readme file when there is any push.
+
+on:
+  workflow_call:  # This event enables this workflow to be called from another workflow, making it reusable.
 
 permissions:      # These permissions define what the workflow can access and modify in the repository:
   repository-projects: write   # Allows creating and modifying project boards.
