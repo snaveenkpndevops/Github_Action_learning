@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Step 2: Setup Terraform
+      # Step 2: Setup Terraform (This will setup terraform in github runner)
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:
@@ -29,7 +29,7 @@ jobs:
 
       # Step 4: Initialize Terraform
       - name: Terraform Init
-        working-directory: ./terraform
+        working-directory: ./terraform  # Our terraform files is inside terraform folder
         run: terraform init
 
       # Step 5: Validate Terraform files
