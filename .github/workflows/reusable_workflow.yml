@@ -23,13 +23,6 @@ jobs:
     uses: snaveenkpndevops/Github_Action_learning/.github/workflows/automate_readme_reusable_workflow.yml@main
 
           # In uses: url of the automate_readme.yml@branch
-    permissions:      # These permissions define what the workflow can access and modify in the repository:
-      repository-projects: write   # Allows creating and modifying project boards.
-      actions: write               # Allows modifying Actions settings.
-      checks: write                # Allows accessing and updating check statuses.
-      contents: write              # Allows modifying repository content (e.g., README.md).
-      deployments: write           # Allows managing deployment workflows.
-      id-token: write              # Grants permission to create OIDC tokens for authentication.
   
   terraform:
     name: Terraform Execution
