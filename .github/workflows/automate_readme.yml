@@ -1,0 +1,30 @@
+name: Automate Terraform Readme Docs
+#on:
+#  push:
+#    branches: [ "master" ]
+
+on:
+  workflow_call:  # This event enables this workflow to be called from another workflow, making it reusable.
+
+permissions:      # These permissions define what the workflow can access and modify in the repository:
+  repository-projects: write   # Allows creating and modifying project boards.
+  actions: write               # Allows modifying Actions settings.
+  checks: write                # Allows accessing and updating check statuses.
+  contents: write              # Allows modifying repository content (e.g., README.md).
+  deployments: write           # Allows managing deployment workflows.
+  id-token: write              # Grants permission to create OIDC tokens for authentication.
+
+jobs:
+  reusable-docs-wf:
+    runs-on: ubuntu-latest  # Run the workflow on an Ubuntu runner
+
+    steps:
+      - uses: actions/checkout@v3  # Checkout the repository code
+
+      - name: Install Terraform Docs
+        uses: terraform-docs/gh-actions@main  # Action to generate Terraform documentation
+        with:
+          working_dir: .  # Use the current directory (adjust if needed)
+          output-file: README.md  # Update the README file with generated docs
+          output-method: inject  # Inject the documentation into the README
+          git-push: "true"
