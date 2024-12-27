@@ -50,6 +50,6 @@ jobs:
 
       # Step 7: Terraform Apply (manual trigger only)
       - name: Terraform Apply
-        if: github.event.inputs.apply == 'Yes'  # Adds a conditional manual apply option
+        if: github.event.inputs.apply == 'Yes' || github.event.inputs.apply == 'yes' # Adds a conditional manual apply option
         working-directory: ./terraform
         run: terraform apply -auto-approve tfplan

@@ -1,0 +1,41 @@
+name: Terraform Self Hosted Runner Workflow
+
+on:
+  workflow_dispatch:  # Trigger workflow only on manual dispatch
+
+    inputs:  # Define inputs under the workflow_dispatch event
+      apply:
+        description: "Terraform apply Option"
+        default: "No"
+        required: true
+
+jobs:
+  terraform:
+    name: Terraform Execution
+    runs-on: self-hosted  
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Initialize Terraform
+      - name: Terraform Init
+        working-directory: ./terraform  # Our terraform files is inside terraform folder
+        run: terraform init
+
+      # Step 3: Validate Terraform files
+      - name: Terraform Validate
+        working-directory: ./terraform
+        run: terraform validate
+
+      # Step 4: Terraform Plan
+      - name: Terraform Plan
+        working-directory: ./terraform
+        run: terraform plan -out=tfplan
+
+      # Step 5: Terraform Apply (manual trigger only)
+      - name: Terraform Apply
+        if: github.event.inputs.apply == 'Yes' || github.event.inputs.apply == 'yes'  # Adds a conditional manual apply option
+        working-directory: ./terraform
+        run: terraform apply -auto-approve tfplan
