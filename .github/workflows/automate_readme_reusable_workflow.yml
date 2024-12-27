@@ -1,10 +1,5 @@
 name: automate_readme_reusable_workflow
 
-# on:
-#  push:
-#    branches: 
-#       - main   # This workflow will automatically generate readme file when there is any push.
-
 on:
   workflow_call:  # This event enables this workflow to be called from another workflow, making it reusable.
 
