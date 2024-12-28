@@ -36,15 +36,19 @@ For Ex: For node js project we need to choose node js CI/CD template. For Python
 
 2. Suppose you are doing repeatable task in your multiple repository. We can create a separate workflow only for the particular task and we can call this workflow in our other workflow.
 
-    Ex: 1.  For Code Checkout there is a github pre-built Reusable workflow.
-        2.  For Automate Terraform Readme file, we can create a new workflow for automate readme file and we can call the workflow from another workflow.
+Ex: 
+
+1.  For Code Checkout there is a github pre-built Reusable workflow.
+2.  For Automate Terraform Readme file, we can create a new workflow for automate readme file and we can call the workflow from another workflow.
 
 ### 2. Starter Workflow Purpose: 
 
 1. Provides a template or starting point for creating a new workflow. 
 2. Meant to help developers quickly bootstrap GitHub Actions workflows.
 
-	   Ex:  Suppose We need to create CI/CD pipeline for node js project for multiple repository projects. Then Instead of creating the nodejs CI/CD pipeline from scratch is a difficult one. So we can create a template for the node js CI CD pipeline as a starter workflow. And we can use that starter workflow template and then we can modify based on the requirement of each project.
+Ex:
+
+Suppose We need to create CI/CD pipeline for node js project for multiple repository projects. Then Instead of creating the nodejs CI/CD pipeline from scratch is a difficult one. So we can create a template for the node js CI CD pipeline as a starter workflow. And we can use that starter workflow template and then we can modify based on the requirement of each project.
 
 
 
