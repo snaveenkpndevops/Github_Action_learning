@@ -17,7 +17,7 @@ github: https://github.com/vishal-bulbule/Mastering-github-actions
 For Learning the Github Action, Please refer the `Learning_README.md` to check the order of Readme files.
 
 
-### Starter Workflows in Github Actions.
+## Starter Workflows in Github Actions.
 
 Imagine we are new to Github action and we  don’t know the Github Actions syntax & template. So this starter workflow will give basic syntax template we can modify based on our needs.
 
@@ -28,7 +28,7 @@ For Ex: For node js project we need to choose node js CI/CD template. For Python
 
 
 
-### Difference between Reusable Github action workflow vs starter workflow?
+## Difference between Reusable Github action workflow vs starter workflow?
 
 ### 1. Reusable Workflow Purpose: 
 
@@ -53,7 +53,7 @@ Suppose We need to create CI/CD pipeline for node js project for multiple reposi
 
 
 
-### My-handson for Inbuilt Starter workflow in Github Action.
+## My-handson for Inbuilt Starter workflow in Github Action.
 
 
 Go to repository  →  Click Actions → Click New Workflow   →  In Deployment tab  →  Click Terraform Configure
@@ -81,7 +81,7 @@ So this is the basic template of terraform.
 
 
 
-### My-handson for Our Own Starter workflow in Github Action.
+## My-handson for Our Own Starter workflow in Github Action.
 
 If we created our own customize workflow and our organization wants to use that as starter workflow.
 
@@ -125,7 +125,7 @@ Then we need to create json file also.
 
 
 
-### Checking:
+## Checking:
 
 Now Create a new public repository:
 
@@ -146,7 +146,7 @@ Click Configure.
 
 
 
-### Note:
+## Note:
 
 1. Starter Workflows created by user can only be used to create workflows in public repositories.
 
