@@ -1,29 +1,16 @@
 # Github_Action_learning
 This repository contains my GitHub learning files, README examples, and related resources.
 
+## Reference:
 
-<!-- BEGIN_TF_DOCS -->
-## Requirements
+```
+Youtube: TechTrapture
+link:  https://www.youtube.com/watch?v=zH8hz_21x_0&list=PLLrA_pU9-Gz2GnvKN0kzVfIZVEUApgjTN
 
-No requirements.
+github: https://github.com/vishal-bulbule/Mastering-github-actions
 
-## Providers
+```
 
-No providers.
+## Note:
 
-## Modules
-
-No modules.
-
-## Resources
-
-No resources.
-
-## Inputs
-
-No inputs.
-
-## Outputs
-
-No outputs.
-<!-- END_TF_DOCS -->
+For Learning the Github Action, Please refer the `Learning_README.md` to check the order of Readme files.
